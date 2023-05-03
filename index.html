@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abel EGBOHOU Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/20c35d4329.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Mobile developer</p>
+                <h1>Hi, I'm <span>Abel</span><br>Egbohou From Togo</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------About---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about_me.png" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>After obtaining my bachelor's degree in mathematics and computer science, i began a series of
+                        studies in
+                        self-taught programming. After the web languages HTML 5; CSS; JavaScript and PHP, I have
+                        improved my knowledge of Java language and relational databases in SQL. With all these
+                        knowledge.
+                        I started the native development on Android with Java then with the Kotlin language, the main
+                        language in this field currently. I have thus completed several projects, two of which are the
+                        application of general culture quizzie and a multimedia app "Shine player" for playing audios,
+                        videos and audios streaming with Deezer. Then I
+                        found out the hybrid development with Ionic and currently with Flutter that for me is the best
+                        framework in this area. So for more than three years I make mobile development with Android
+                        (with JetPack libraries and Compose) and flutter with Dart. I now master several languages, in
+                        occurrence Java, Kotlin, Dart, Python, JavaScript, etc. I also masterize some framework out here
+                        in particular the api and microservices well known framework Spring Boot with Java. For many
+                        years now, mobile development is my main concern and so i am amply arranged to do my best to
+                        carry out any mobile project ...</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>2022 - current </span><br>Mobile app development in native with Kotlin, hybrid
+                                with Flutter and api, microservices with Spring Boot and java</li>
+                            <li><span>2021 - 2022 </span><br>Hybrid app development with Flutter</li>
+                            <li><span>2020 - 2021</span><br>Android native app development</li>
+                            <li><span>2019 - 2020</span><br>Building Web apps with HTML5, CSS, Javascript and PHP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Android native app development</span><br>I have build two personnal apps,
+                                completly from scratch. The first one is Quizzie, a french trivia app and second one a
+                                audio, videos player Shine player, all available on the Play store.</li>
+                            <li><span>Flutter app development</span><br>Developped two apps with flutter, a wallpaper
+                                app with many features "Custom wallpaper" and DCDL a french TV Game for smarthphone, all
+                                available on the Play store.</li>
+                            <li><span>Api and Microservices development</span><br>I have built many APIs and
+                                microservices for my apps with Java and also with Python.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Bachelor's degree in Mathematics and Computer science.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------Services ------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Develop<br> Android app</h2>
+                    <p>I develop android native apps with Kotlin. From basics ideas to the realisation of the project
+                        with good architecture and until the release of the app on the play store.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Develop<br> Flutter app</h2>
+                    <p>I develop hybrid app for Android and IOS with the Flutter framework and Dart. From scratch, i
+                        build app for Android and for IOS also with good project structure and testing.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Build API and Microservices</h2>
+                    <p>I build modern microservices, APIs with CRUD operations and SOAP services with Spring Boot and
+                        Java. All project structure, architecture and testing set in the best way for making good app.
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------- Portfolio ----------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Quzzie_en.png" alt="work-1">
+                    <div class="layer">
+                        <div class="layer">
+                            <h3>Quizzie</h3>
+                            <p>The app is a french trivia game with new and cool features such player personal
+                                statistics, leaderboard, badges etc.
+                            </p>
+                            <a href="https://play.google.com/store/apps/details?id=com.mawuvidev.quizzie"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dcdl_en.png" alt="work-2">
+                    <div class="layer">
+                        <h3>DCDL</h3>
+                        <p>The app is fully copy of a french tv official and popular game the same like Countdown in
+                            England. So app the allow you to play like player in the tv game.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.mawuvidev.dcdl"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Shineplayer_en.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Shine Player</h3>
+                        <p>The app is multimedia player app for audios and videos. It allow you to play your
+                            audios/videos contents, lock theme, make them private,create playlists, stream audio
+                            contents, and record audios.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.mawuvidev.shineplayer"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/custom_wallpaper_en.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Custom wallpaper</h3>
+                        <p>The app allow to set an wallpaper for day or the night either in home screen or in the lock one. The app is in french and in english, it contains dark and light theme. You fecth many images from unsplash api and download them or add legends etc.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.mawuvidev.custom_wallpaper"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!-- -----------------Contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mawulifreelance@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0022891635712</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <!-- <a href="images/cv.pdf" download="abel_cv" class="btn btn2">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" required placeholder="Your Name">
+                        <input type="email" name="name" required placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Abel Egbohou. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+
+    <!-- -------------------JS Script------------------------ -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
